@@ -36,7 +36,7 @@ def extraer_texto_y_formulas(pdf_path):
 # Función para hacer la pregunta al LLM
 def hacer_pregunta(pregunta):
     # Extraer contenido del PDF
-    contexto = extraer_texto_y_formulas("TercerP.pdf")
+    contexto = extraer_texto_y_formulas("SegundoP.pdf")
 
     # Mensajes para el modelo
     mensajes = [
@@ -58,7 +58,7 @@ def hacer_pregunta(pregunta):
 
 
 
-st.title("Asistente Inteligente")
+st.title("Asistente Inteligente: Teoría Segundo Parcial")
 #pregunta = st.text_input("Ingrese su pregunta aquí:")
 
 with st.form(key="form_pregunta"):
